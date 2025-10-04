@@ -1,0 +1,9 @@
+.label{
+    text-align: left;
+    font-size: small;
+}
+
+.input{
+    width: 100%;
+    border-color: #75295A !important;
+}
