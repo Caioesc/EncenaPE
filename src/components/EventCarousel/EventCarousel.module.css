@@ -1,0 +1,37 @@
+.container {
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #75295a;
+}
+
+.link {
+  color: #75295a;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  margin-top: 0.5rem;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 200px;
+  background-color: #75295a;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}

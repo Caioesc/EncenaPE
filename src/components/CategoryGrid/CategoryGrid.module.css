@@ -1,0 +1,33 @@
+.container {
+  padding: 1rem;
+}
+
+h3 {
+  color: #75295a;
+  margin-bottom: 0.8rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  background-color: #fbedE3;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.card {
+  background-color: #75295a;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #5a1f44;
+}

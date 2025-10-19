@@ -4,22 +4,22 @@ import styles from './Login.module.css'
 import Formulario from '../../components/Formulario/Formulario'
 import { Botao } from '../../components/Botao/Botao'
 import api from '../../api'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
 
   const [email, setEmail] = useState<string>("");
   const [senha, setSenha] = useState<string>("");
 
+  const navigate = useNavigate()
+
   function validarLogin(){
     if (email != "" && senha != ""){
-      try{
-        api.post("/logar", {email:email, senha:senha}).then(response => {
-          alert("Bem vindo, " + response.data.nome + " id: " + response.data.usuarioId);
-        })
-     }catch(error){
-        console.error(error);
-      }
-    } else{
+
+        api.post("/logar", {email:email, senha:senha}).then(response => {alert("Bem vindo, " + response.data.nome), navigate("/home")})
+        .catch(response =>{alert("Atencão: " + response.data)})
+    }
+    else{
       alert("Preencha os campos!")
     }
     

@@ -1,0 +1,11 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.main {
+  flex: 1;
+  padding-bottom: 4rem; /* espaço pro footer */
+}
